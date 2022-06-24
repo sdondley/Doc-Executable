@@ -1,5 +1,5 @@
 use v6.d;
-#use Test;
+use Test;
 use Doc::Executable::Resources;
 
 my $resources := resources;
@@ -38,4 +38,4 @@ my $rs = Resources.new();
 #$rs.list-topics();
 #dd $rs;
 
-#done-testing;
+done-testing;
