@@ -1,0 +1,25 @@
+use v6.d;
+use Test;
+use Doc::Executable::Parser;
+
+plan 2;
+
+my $dir = 't/data_files/';
+my @files = <data.txt data-01.txt>;
+
+my @expected =
+'[{code => [[block1 description
+more description explanation] [block2]], meta => [header intro]} {code => [[block3] [block4]], meta => [header2 ]}]'
+,
+'[{code => [[block1 description
+more description explanation]], meta => [ ]}]';
+
+for @files -> $file {
+    my $parsed = parse-file "$dir/$file";
+    die "Could not parse data in $file" if $parsed.^name eq 'Any';
+    my $expected = shift @expected;
+    is $parsed.gist, $expected, "got expected parsed output from $file";
+}
+
+
+done-testing;

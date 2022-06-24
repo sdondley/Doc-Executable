@@ -1,0 +1,34 @@
+#* List Basics
+
+#* List examples demonstrating the basics of lists
+
+##
+1, 2
+
+#* Here is a simple list with two elements. List are comma-separated values, parentheses can be optional
+##
+
+##
+1,
+
+#* It's possible to create a one element list with a trailing comma after the first element.
+# Again, it's the comma that creates a list
+##
+
+##
+(1, 2)
+#* It's good practice, however, to always surround lists with parentheses
+##
+
+##
+say 1, 2;
+#* When passing a list to a function, you must use parentheses
+#* Here, the two elements are not treated as a list by the 'say' function because there are no parentheses
+##
+
+##
+my @list = 1, 2, 3;
+say @list;
+#* some desc
+##
+

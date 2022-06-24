@@ -1,0 +1,57 @@
+#* Sequences
+
+#* Sequences represent anything that can produce a sequence of values. They are similar to Lists but have some important differences.
+
+##
+1...5;
+#* This is a Sequence literal
+#* The literal has three parts:
+# The left-hand side of the infix Sequence operator: 1
+# The right-hand side of the infix Sequence operator: 5
+# The infix Sequence operator: ...
+# the infix operator has three dots in a row.
+# An "infix" operator is an operator that goes between two other arguments.
+##
+
+##
+1…5;
+#* We can use the single ellipses character for the infix operator instead of three dots.
+##
+
+##
+1 ... 5;
+#* Whitespace between the infix operator and it's arguments is allowed
+##
+
+
+##
+say 1...5;            # a Sequence
+say (1, 2, 3, 4, 5);  # a List
+say (1...5).^name;
+say (1, 2, 3, 4, 5).^name;
+#* Sequences look similar to lists when output.
+#* As you can see, Sequences output with say are indistinguishable from Lists. Here, we use the ^.name method to show the object type.
+##
+
+##
+5...1;
+#* Sequences can count down as well.
+##
+
+##
+'a' ... 'e';
+#* The left and right and sides of the infix operator do no have to be integers.
+##
+
+##
+'aa' ... 'ee';
+#* Sequences can even "count" with strings containing more than one character.
+##
+
+##
+say 1 ^... 4;   # exclude first element
+say 1 ...^ 4;   # exclude last element
+say 1 ^...^ 4;  # exclude first and last elements
+#* Sequences have three other operators, or variants, which are created by adding a carat symbol to either or both sides of the ... symbol.
+#* Adding the carat symbol to the left hand side excludes the first element from the sequence. Adding the carat to the right hand side excludes the last element. And adding a carat to both sides excludes the first and last elements.
+##

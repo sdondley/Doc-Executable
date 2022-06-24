@@ -1,0 +1,24 @@
+use v6.d;
+use Doc::Executable::Subroutines;
+use Test::Output;
+use Test;
+
+output-is {
+    das '(1, 2)', '';
+}, "say (1, 2);\nOutput: (1 2)\n\n",
+    'got correct output';
+
+output-is {
+    das q/
+my $s = (1, 2, 3);
+for $s { .say }      # one iteration/
+}, Q/
+my $s = (1, 2, 3);
+for $s { .say }      # one iteration;
+
+Output:
+(1 2 3)
+
+/, 'multiline code';
+
+done-testing;

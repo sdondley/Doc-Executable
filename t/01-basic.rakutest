@@ -1,7 +1,9 @@
 use Test;
 use Doc::Executable;
 
-# TODO  write a test
-#plan X;
+# TODO add Distribution::Resources module ability
+#plan 1;
+
+is 1, 1, 'runs a test';
 
 done-testing;

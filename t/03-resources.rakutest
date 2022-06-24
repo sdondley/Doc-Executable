@@ -1,0 +1,42 @@
+use v6.d;
+#use Test;
+use Doc::Executable::Resources;
+use Data::Dump;
+
+my $resources := resources;
+my $dist := distribution;
+my @resources = $dist.meta<resources>;
+@resources>>.say;
+
+
+#my $blah = $resources<examples/Lists/somefile>.lines;
+#say $blah;
+
+#my $rs = Resource.new();
+#is $rs.^name, 'Doc::Resources::Resource', 'can create object';
+
+my $rs = Resources.new();
+#$rs.list-topics;
+#$rs.list-lessons;
+#say $rs.resource-exists('Lists/01 - Basics');
+#say $rs.files;
+#say $rs.lesson-is-unique('01 - Basics');
+#say $rs.lesson-from-name('01 - Basics');
+#$rs.parse-lesson('Lists/01 - List Literals');
+#$rs.parse-lesson('Lists/02 - Multidimensional Lists');
+#$rs.parse-lesson('Lists/04 - Immutability');
+#$rs.parse-lesson('Lists/05 - List Assignment');
+#$rs.parse-lesson('Sequences/01 - Basics');
+#$rs.parse-lesson('Sequences/02 - Arithmetic and Geometric Sequences');
+#$rs.parse-lesson('Sequences/03 - Indexing Sequences');
+
+
+
+#my $rs = LocalResources.init();
+#say Dump({ some => $rs}, :color(False), :skip-methods(True));
+#$rs.parse-lesson('Lists', '01 - Basics');
+#$rs.list-lessons('Lists');
+#$rs.list-topics();
+#dd $rs;
+
+#done-testing;

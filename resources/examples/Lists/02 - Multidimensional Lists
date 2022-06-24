@@ -1,0 +1,22 @@
+#* Multidimensional Lists
+
+##
+((1, 2), (3, 4));
+#* A multidimensional list of one or more lists within a list
+##
+
+##
+(1, 2; 3, 4);
+#* Semicolons can also be used to delimit lists within a list
+##
+
+##
+(1; 2; 3; 4, 5);
+#* Lists with one element are flattened
+#* Here the first three lists are flattened because they only have one element
+##
+
+##
+say (1, 2, 3, (5, 6; 7, 8, (9, 10)))
+#* Lists nested to any level and semis can parentheses can be mixed to generate the multidimensional list
+##

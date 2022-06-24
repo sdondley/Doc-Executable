@@ -1,0 +1,36 @@
+#* Arithmetic and Geometric Sequences
+
+#* Sequences can generate more complex series of values than simple lists that count up or down by one with arithmetic and geometric.
+
+##
+0, 2 ... 10;
+#* An arithmetic sequence
+#* If the infix Sequence operator has two or more elements on the left hand side and one on the right, it will deduce and generate an arithmetic Sequence up to and including the last element.
+# The first two elements on the left are separated by 2, and so the remaining elements in the sequence count up by 2.
+# The first two elements that establish the series are called the "generator."
+##
+
+
+##
+say 1, 2, 4 ... 256;
+#* If the left hand side contains 3 or more elements, the Sequence will generate a geometric series if one can be deduced.
+#* The three elements are also a "generator."
+##
+
+##
+say 1, 2, 6 ... 256;
+#* If an arithmetic or geometric series can't be deduced, an error will be output
+##
+
+##
+say 1, 2, 6, 1, 2, 4 ... 256;
+#* However, if the last 2 or 3 elements contain a generator, the arithmetic or geometric series will added after the elements that do not establish a series.
+##
+
+##
+say 0, 2 ...^ 10;
+say 0, 2 ^... 10;
+say 0, 2 ^...^ 10;
+say 1, 2, 4 ^...^ 256;
+#* The infix operator variants work with arithmetic and geometric sequences:
+##

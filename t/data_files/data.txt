@@ -1,0 +1,24 @@
+use v6.d;
+#* header
+
+#* intro
+
+##
+#block1
+=comment
+more description
+=explanation
+##
+
+##
+say 'hi';
+##
+
+#* header2
+##
+#block3
+##
+
+##
+#block4
+##

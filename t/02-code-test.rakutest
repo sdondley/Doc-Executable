@@ -1,0 +1,26 @@
+use v6.d;
+use Test;
+use Doc::Executable::Parser;
+use Doc::Executable::Subroutines;
+
+my $dir = 't/data_files/';
+my @files = <data.txt>;
+
+for @files -> $file {
+    my @parsed = parse-file "$dir/$file";
+    die "Failed parse examples from $file" if @parsed.^name eq 'Any';
+    for @parsed -> $section {
+        my $heading = $section<meta>[0] || '';
+        my $intro = $section<meta>[1] || '';
+        say $heading.uc ~ "\n" if $heading && !$intro;
+        say $heading.uc if $heading && $intro;
+        say $intro ~ "\n" if $intro;
+        for $section<code>.Array {
+            die "Failed parse examples from $file, check it's syntax." if $_.^name eq 'Any';
+            das |$_>>.trim;
+        }
+    }
+}
+
+
+#done-testing;

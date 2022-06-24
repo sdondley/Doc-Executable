@@ -1,0 +1,9 @@
+#* List Assignment
+
+#* Lists can be assigned to variables;
+
+##
+my @list = 1, 2, 3;
+say @list[0];
+#* Lists can be assigned to an arrays as well
+##

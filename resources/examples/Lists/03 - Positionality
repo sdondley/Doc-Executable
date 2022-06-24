@@ -1,0 +1,23 @@
+#* Positionality
+
+#* Lists use the Positional role
+
+##
+(1, 2, 3)[2];
+#* Lists implement the Positional role so elements can be accessed with a subscript
+##
+
+##
+(1, 2, 3)[7];
+#* A Nil value is generated if an indexed element does not exist
+##
+
+##
+(1, 2, 3)[0];
+#* By default, index numbers start with zero
+##
+
+##
+(1, 2, 3, 4, 5)[0..2]
+#* Selecting list elements with a range
+##

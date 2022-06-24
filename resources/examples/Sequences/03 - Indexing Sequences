@@ -1,0 +1,34 @@
+#* Indexing Sequences
+
+#* Accessing specific elements within a sequence.
+
+##
+(5 ... 10)[3];
+#* We can pull specific elements from a sequence using a subscript, similar to an Array or List.
+#* Here we get the third element from the Sequence, the number 2
+##
+
+##
+(5 ... 15)[3,5];
+(1, 3 ... 21)[3, 5, 7]
+#* We can pull multiple elements with a comma separated list of subscripts
+##
+
+##
+(1, 3 ... 21)[3 .. 5]
+#* Or use a ranges like this
+##
+
+##
+(1, 3 ... 2001)[1, 2, 4 ... 256]
+#* We can even use a sequence to generate our subscripts
+##
+
+##
+(1 ... 100)[^5]
+#* Range operators also work as expected
+#* Returns the 0th through 4th elements
+##
+
+
+

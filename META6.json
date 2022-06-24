@@ -1,24 +1,38 @@
 {
+  "name": "Doc::Executable",
+  "description": "Executable Raku examples",
+  "version": "0.0.1",
+  "perl": "6.d",
   "authors": [
     "Steve Dondley"
   ],
-  "build-depends": [
-  ],
+  "auth": "zef:sdondley",
   "depends": [
+    "Test::Output"
   ],
-  "description": "blah blah blah",
-  "license": "Artistic-2.0",
-  "name": "Doc::Executable",
-  "perl": "6.d",
+  "build-depends": [],
+  "test-depends": [],
   "provides": {
-    "Doc::Executable": "lib/Doc/Executable.rakumod"
+    "Doc::Executable": "lib/Doc/Executable.rakumod",
+    "Doc::Executable::Examples": "lib/Doc/Executable/Examples.rakumod",
+    "Doc::Executable::Parse": "lib/Doc/Executable/Parse.rakumod",
+    "Doc::Executable::Resources": "lib/Doc/Executable/Resources.rakumod",
+    "Doc::Executable::Subroutines": "lib/Doc/Executable/Subroutines.rakumod"
   },
   "resources": [
+    "examples/Sequences/01 - Basics",
+    "examples/Sequences/02 - Arithmetic and Geometric Sequences",
+    "examples/Sequences/03 - Indexing Sequences",
+    "examples/Sequences/04 - Infinite Sequences",
+    "examples/Lists/01 - List Literals",
+    "examples/Lists/05 - List Assignment",
+    "examples/Lists/02 - Multidimensional Lists",
+    "examples/Lists/06 - Methods",
+    "examples/Lists/04 - Immutability",
+    "examples/Lists/03 - Positionality",
+    "examples/Lists/somefile"
   ],
-  "source-url": "",
-  "tags": [
-  ],
-  "test-depends": [
-  ],
-  "version": "0.0.1"
+  "license": "Artistic-2.0",
+  "tags": [],
+  "source-url": ""
 }

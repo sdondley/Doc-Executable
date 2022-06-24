@@ -1,0 +1,118 @@
+#* List Basics
+
+#* List examples demonstrating the basics of lists
+
+##
+1, 2;
+#* This is a simple list with two elements. List are comma-separated values, parentheses can be optional
+##
+
+##
+(1, 2)
+#* It's good practice, however, to always surround lists with parentheses
+##
+
+##
+say 1, 2
+#* To pass a list to a function, you must use parentheses
+#* The two elements are not treated as a list by the 'say' function because there are no parentheses
+##
+
+##
+(7,)
+#* A list with one element. Commas create lists
+##
+
+##
+(1)
+#* This is not a list because there is no comma
+##
+
+
+##
+('home team', 'away team')
+#* Note also that list elements are separated with white space when output
+##
+
+##
+(,)
+#* This throws a compile time error
+##
+
+##
+(1, 2, 3).elems
+#* Get the number of elements with elems method
+##
+
+##
+my $list = (1, 2, 3);
+say $list.elems;
+#* Lists can be assigned to a scalar
+##
+
+##
+my @list = (1, 2, 3);
+say @list[0];
+#* Lists can be assigned to an arrays as well
+##
+
+##
+(1, 2, 3).shift;
+(1, 2, 3).unshift(0);
+(1, 2, 3).push(4);
+(1, 2, 3).pop;
+(1, 2, 3)[0]:delete;
+(1, 2, 3)[0] := 0;
+(1, 2, 3)[0] = 0;
+#* Because lists are immutable, the following lines of code throw an error
+##
+
+##
+(1, 2)
+#* The 'say' function will output lists in parentheses
+##
+
+##
+()
+#* An empty list
+##
+
+##
+(1, 2, 3)[2]
+#* Lists are a subclass of Positional so elements can be accessed with an index number in a subscript using square brackets
+##
+
+##
+(1, 2, 3)[7]
+#* A Nil value is generated if an indexed element does not exist
+##
+
+##
+(1, 2, 3)[0]
+#* By default, index numbers start with zero
+##
+
+##
+(1, 2; 3)
+#* Semis delimit lists
+##
+
+##
+(1, 2), (3, 4)',
+#* A List of lists, multidimensional array syntax
+##
+
+##
+(1; 2)
+#* Lists with one element are flattened
+##
+
+
+##
+(1,2).WHAT
+#* Do something
+##
+
+##
+(1,2).^name;
+##

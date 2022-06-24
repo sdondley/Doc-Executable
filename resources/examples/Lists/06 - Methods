@@ -1,0 +1,67 @@
+#* Methods
+
+#* Methods that can be run on List objects
+
+##
+(1,2).WHAT;
+#*
+##
+
+##
+(1,2).^name;
+##
+
+##
+(1, 2, 3).elems
+#* Get the number of elements with elems method
+##
+
+##
+(1, 2, 3).end
+#* Return the index of the last element in a list
+##
+
+##
+(1, 2, 3).keys
+#* Returns the sequence of indexes in the list
+##
+
+##
+(1, 2, 3).values
+#* Returns the sequence of a lists elements, in order
+##
+
+##
+(4, 5, 6).kv
+#* Returns an interleaved sequence of a lists indexes and values
+##
+
+##
+(4, 5, 6).pairs
+#* Returns a sequence of pairs, with the indexes as keys and the list values as values
+##
+
+##
+(4, 5, 6, 4).antipairs
+#* Returns a sequence of pairs, with the values as keys and the list indexes as values
+#* Notice the duplicate values will also create duplicate keys.
+##
+
+##
+(a => (2, 3), b => 17).invert;
+#* invert
+# The invert method assumes every element of the List is a Pair. Returns all elements as a Seq of Pairs where the keys and values have been exchanged. If the value of a Pair is an Iterable, then it will expand the values of that Iterable into separate pairs.
+##
+
+##
+(1, 2, 3).join(" * ");
+#* join
+#Convert each element to a string and create an output string with each element joined by separator
+##
+
+##
+say ('hello', 1, 22/7, 42, 'world').map: { .^name }
+#* map
+# map passes each element in the list to the code block using the topic variable, $_. The object returned by map is a Seq, not a list
+# The .^name method is run on each element to output the type of the objects in the list as a Sequence.
+##

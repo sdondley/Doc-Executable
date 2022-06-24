@@ -1,0 +1,47 @@
+#* List Basics
+
+#* List examples demonstrating the basics of lists
+
+##
+1, 2;
+#* This is a simple list with two elements. List are comma-separated values, parentheses can be optional
+##
+
+##
+(1, 2);
+#* It's good practice, however, to always surround lists with parentheses
+##
+
+##
+say 1, 2;
+say (1, 2);
+#* To pass Lists to a function, be sure to use parentheses
+#* Without parentheses, the two elements are treated as separate parameters to the 'say' function
+# A List is passed with parentheses which gives a different output.
+##
+
+##
+(7,);
+#* A list with one element.
+##
+
+##
+(1);
+#* This is not a list because there is no comma. Remember, commas create lists
+##
+
+##
+();
+#* An empty list
+##
+
+##
+(,);
+#* This throws a compile time error
+##
+
+##
+('home team', 'away team');
+#* List elements are separated with a space when output
+##
+

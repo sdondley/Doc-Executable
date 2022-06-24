@@ -1,0 +1,18 @@
+#* Infinite Sequences
+
+#* Sequences do not have to have a defined last element. They can go on forever.
+
+##
+0 ... 100000000000000000000000000000000000000;
+#* Sequences can handle a very large series of numbers
+#* Even though this Sequence is huge, it's still created almost instantly. This is because the Sequence isn't generated until it's used.
+##
+
+##
+#0 ... *;
+#0 ... Inf;
+#0 ... ∞;
+#* Sequences can even go to infinity
+#* Unlike sequences with a defined end point, an infinite series will cause your computer to enter an infinite loop.
+# The lines above are commented out to prevent an infinite loop.
+##

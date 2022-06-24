@@ -1,0 +1,25 @@
+#* List Immutability
+
+#* List are immutable objects, which means they can't be changed.
+
+##
+(1, 2, 3).shift;
+(1, 2, 3).unshift(0);
+(1, 2, 3).push(4);
+(1, 2, 3).pop;
+(1, 2, 3)[0]:delete;
+(1, 2, 3)[0] := 0;
+(1, 2, 3)[0] = 0;
+#* Because lists are immutable, the following lines of code throw an error
+##
+
+##
+my $a = 'z';
+my $list = ( $a, 3 );
+say $list;
+$list[0] = 'a';
+say $list;
+#* However, containerized items in a list can be modified.
+#* Since a scalar containerizes it values, we can change its value in the list without getting an error.
+##
+
