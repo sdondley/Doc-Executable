@@ -1,7 +1,6 @@
 use v6.d;
 #use Test;
 use Doc::Executable::Resources;
-use Data::Dump;
 
 my $resources := resources;
 my $dist := distribution;
