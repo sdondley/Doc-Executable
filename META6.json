@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "Steve Dondley"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "blah blah blah",
+  "license": "Artistic-2.0",
+  "name": "Doc::Executable",
+  "perl": "6.d",
+  "provides": {
+    "Doc::Executable": "lib/Doc/Executable.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}

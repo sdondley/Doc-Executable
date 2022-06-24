@@ -1,0 +1,7 @@
+use Test;
+use Doc::Executable;
+
+# TODO  write a test
+#plan X;
+
+done-testing;
