@@ -1,24 +1,23 @@
-use v6.d;
 #* header
 
 #* intro
 
 ##
-#block1
-=comment
-more description
-=explanation
+block1
+#* description
+#more description
+#* explanation
 ##
 
 ##
-say 'hi';
+block2
 ##
 
 #* header2
 ##
-#block3
+block3
 ##
 
 ##
-#block4
+block4
 ##
