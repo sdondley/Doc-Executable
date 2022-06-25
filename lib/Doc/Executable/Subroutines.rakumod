@@ -2,7 +2,6 @@ use v6.d;
 
 unit module Docs::Executable::Subroutines;
 
-my $pause = False;
 sub blank(Int:D $lines = 0) is export {
     (loop { say '' })[$lines];
 }
@@ -60,3 +59,5 @@ sub das(Str:D $code, Str $description = Str, Str $explanation = Str ) is export 
     print-output(%block);
     print-explanation(%block);
 }
+
+
