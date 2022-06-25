@@ -1,5 +1,9 @@
-unit class Doc::Executable;
+unit module Doc::Executable;
+use Doc::Executable::Resources;
 
+sub execute() is export {
+    menu-execute;
+}
 
 =begin pod
 
