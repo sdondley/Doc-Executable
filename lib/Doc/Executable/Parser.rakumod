@@ -1,5 +1,6 @@
 use v6.d;
 unit module Doc::Executable::Parser;
+use Doc::Executable::Subroutines;
 #use Grammar::Debugger;
 
 grammar Parser {
@@ -49,10 +50,24 @@ class Actions {
         }
         make @subsections;
     }
-
 }
 
 sub parse-file(Str:D $path) is export {
     my $file = slurp $path;
     return Parser.parse($file, actions => Actions.new ).made;
+}
+
+sub eval-file(@parsed) is export {
+    for @parsed -> $section {
+        my $heading = $section<meta>[0] || '';
+        my $intro = $section<meta>[1] || '';
+        say $heading.uc ~ "\n" if $heading && !$intro;
+        say $heading.uc if $heading && $intro;
+        say $intro ~ "\n" if $intro;
+        for $section<code>.Array {
+            die "Failed parse example from, check the file's syntax." if $_.^name eq 'Any';
+            das |$_>>.trim;
+        }
+    }
+
 }
