@@ -8,29 +8,28 @@
   ],
   "auth": "zef:sdondley",
   "depends": [
-    "Test::Output"
+    "Test::Output",
+    "Injector"
   ],
   "build-depends": [],
   "test-depends": [],
   "provides": {
     "Doc::Executable": "lib/Doc/Executable.rakumod",
-    "Doc::Executable::Examples": "lib/Doc/Executable/Examples.rakumod",
-    "Doc::Executable::Parse": "lib/Doc/Executable/Parse.rakumod",
+    "Doc::Executable::Parser": "lib/Doc/Executable/Parser.rakumod",
     "Doc::Executable::Resources": "lib/Doc/Executable/Resources.rakumod",
     "Doc::Executable::Subroutines": "lib/Doc/Executable/Subroutines.rakumod"
   },
   "resources": [
-    "examples/Sequences/01 - Basics",
-    "examples/Sequences/02 - Arithmetic and Geometric Sequences",
-    "examples/Sequences/03 - Indexing Sequences",
-    "examples/Sequences/04 - Infinite Sequences",
-    "examples/Lists/01 - List Literals",
-    "examples/Lists/05 - List Assignment",
-    "examples/Lists/02 - Multidimensional Lists",
-    "examples/Lists/06 - Methods",
-    "examples/Lists/04 - Immutability",
-    "examples/Lists/03 - Positionality",
-    "examples/Lists/somefile"
+    "Lists/00 - List Literals",
+    "Lists/14 - Positionality",
+    "Lists/21 - Immutability",
+    "Lists/28 - List Assignment",
+    "Lists/35 - Methods",
+    "Lists/42 - Multidimensional Lists",
+    "Sequences/00 - Basics",
+    "Sequences/07 - Arithmetic and Geometric Sequences",
+    "Sequences/14 - Indexing Sequences",
+    "Sequences/21 - Infinite Sequences"
   ],
   "license": "Artistic-2.0",
   "tags": [],
