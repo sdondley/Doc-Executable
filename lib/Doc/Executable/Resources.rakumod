@@ -1,18 +1,13 @@
 use v6.d;
-use Injector;
 unit module Doc::Executable::Resources;
 use Doc::Executable::Parser;
 use Distribution::Resources::Menu;
 
-BEGIN {
-    bind $?DISTRIBUTION, :name<dist>;
-    bind %?RESOURCES, :name<rsrc>;
-}
-
-my ResourceMenu $c is injected;
+my $rsm = ResourceMenu.new(
+        distribution => $?DISTRIBUTION,
+        resources    => %?RESOURCES);
 
 sub menu-execute is export {
-    my @parsed = parse-file $c.execute.file-path;
+    my @parsed = parse-file $rsm.execute.file-path;
     eval-file(@parsed);
-
 }

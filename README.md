@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/sdondley/Doc-Executable/actions/workflows/test.yml/badge.svg)](https://github.com/sdondley/Doc-Executable/actions)
+
 NAME
 ====
 
