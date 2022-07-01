@@ -1,6 +1,8 @@
 Revision history for Doc-Executable
 
 {{$NEXT}}
+
+0.0.2  2022-07-01T16:03:27-04:00
     - fix tests breaking workflow tests
 
 0.0.1  2022-07-01T14:04:58-04:00
