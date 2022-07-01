@@ -5,7 +5,7 @@ use Doc::Executable;
 
 plan 1;
 
-when %*ENV<AUTHOR_TESTING> { skip 'skipping author tests'  }
+when %*ENV<AUTHOR_TESTING> { skip 'skipping author tests'; done-testing;  }
 
 test-output-verbosity(:on);
 my $out = output-from { execute };
