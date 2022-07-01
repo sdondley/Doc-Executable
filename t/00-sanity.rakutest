@@ -11,7 +11,7 @@ output-is {
 output-is {
     das q/my $s = (1, 2, 3);
 for $s { .say }      # one iteration/
-}, Q/
+}, !$*DISTRO.is-win ?? Q/
 my $s = (1, 2, 3);
 for $s { .say }      # one iteration
 
@@ -21,6 +21,6 @@ Output:
 
 
 
-/, 'multiline code';
+/ !! "\r\nmy \$s = (1, 2, 3);\r\nfor \$s \{ .say }      # one iteration\r\n\r\nOutput:\r\n(1 2 3)\r\n\r\n\r\n\r\n\r\n"  , 'multiline code';
 
 done-testing;
