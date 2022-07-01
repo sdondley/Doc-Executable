@@ -5,7 +5,7 @@ use Test;
 
 output-is {
     das '(1, 2)', '';
-}, "\n(1, 2)\n\nEvaluates to: (1 2)\n\n\n\n",
+}, $*DISTRO.is-win ?? "\n(1, 2)\n\nEvaluates to: (1 2)\n\n\n\n" !! "\r\n(1, 2)\r\n\r\nEvaluates to: (1 2)\r\n\r\n\r\n\r\n" ,
     'got correct output';
 
 output-is {
