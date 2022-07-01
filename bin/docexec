@@ -2,7 +2,35 @@
 use lib 'lib';
 use Doc::Executable;
 
-# TODO: add option for listing available templates
 sub MAIN() {
     execute;
 }
+
+=begin pod
+
+=head1 docexec
+
+docexec - a command for selecting and running executable tutorials contained
+within the C<Doc::Executable> distribution.
+
+=head1 SYNOPSIS
+
+From the command line:
+=begin code :lang<raku>
+
+docexec
+
+=end code
+
+
+=head1 AUTHOR
+
+Steve Dondley <s@dondley.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2022 Steve Dondley
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+=end pod

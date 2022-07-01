@@ -18,10 +18,8 @@ grammar Parser {
 class Actions {
     method TOP($/) {
         my @sections;
-        my $count;
         for $<section> -> $section {
             my %section;
-            my @code;
             my $header = $section<header><header-text> ?? $section<header><header-text>.Str.trim !! '';
             my $intro =  $section<intro> ?? $section<intro>.Str.trim !! '';
             $intro = $intro.subst(/^^ '#*' \s*/, '');

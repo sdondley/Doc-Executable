@@ -1,12 +1,16 @@
 use v6.d;
-use Injector;
 use Test;
-use lib '.';
-use lib '../Distribution-Resources-Menu/lib';
+use Test::Output;
 use Doc::Executable;
 
+plan 1;
 
-execute();
+when !%*ENV<AUTHOR_TESTING> { skip 'skipping author tests'  }
+
+test-output-verbosity(:on);
+my $out = output-from { execute };
+
+like $out, /1 ' ' '-' ' ' Lists "\n".*/, 'shows menu';
 
 
 done-testing;
