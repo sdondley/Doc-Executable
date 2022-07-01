@@ -7,7 +7,7 @@ plan 1;
 
 when %*ENV<AUTHOR_TESTING> { skip 'skipping author tests'; done-testing;  }
 
-test-output-verbosity(:on);
+#test-output-verbosity(:on);
 my $out = output-from { execute };
 
 like $out, /1 ' ' '-' ' ' Lists "\n".*/, 'shows menu';
