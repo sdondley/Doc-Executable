@@ -38,9 +38,7 @@ Anyone who has looked at code documentation has seen embedded code examples like
 
 Often you want to fiddle with the code so you have to break out the electronic scissors and tediously copy and paste the code into a file and then execute it.
 
-This gets tedious.
-
-So the idea behind a executable doc is to allow you to easily place your collection of code snippets into a single file and easily edit them with less hassle.
+So the idea behind a executable doc is to allow you to easily place your collection of code snippets into a single file where they can be more easily edited and to standarize how the examples are output when executed.
 
 A single executable doc example looks like this:
 
