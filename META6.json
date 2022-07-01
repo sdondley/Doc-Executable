@@ -1,19 +1,19 @@
 {
-  "name": "Doc::Executable",
-  "description": "Executable Raku examples",
-  "version": "0.0.1",
-  "perl": "6.d",
+  "auth": "zef:sdondley",
   "authors": [
     "Steve Dondley"
   ],
-  "auth": "zef:sdondley",
+  "build-depends": [
+  ],
   "depends": [
     "Test::Output",
     "Injector",
     "Distribution::Resources::Menu"
   ],
-  "build-depends": [],
-  "test-depends": [],
+  "description": "Executable Raku examples",
+  "license": "Artistic-2.0",
+  "name": "Doc::Executable",
+  "perl": "6.d",
   "provides": {
     "Doc::Executable": "lib/Doc/Executable.rakumod",
     "Doc::Executable::Parser": "lib/Doc/Executable/Parser.rakumod",
@@ -31,7 +31,10 @@
     "Sequences/14 - Indexing Sequences",
     "Sequences/21 - Infinite Sequences"
   ],
-  "license": "Artistic-2.0",
-  "tags": [],
-  "source-url": ""
+  "source-url": "https://github.com/sdondley/Doc-Executable.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
 }
