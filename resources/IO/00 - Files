@@ -3,19 +3,18 @@
 #* Examples for working with files
 
 ##
-slurp('path/to/file').say
+slurp("$*TMPDIR/file").say
 #* Print the contents of file followed by a newline
 ##
 
 ##
-my $file-content = slurp 'some-file'
+my $file-content = slurp "$*TMPDIR/file";
 #* Assign the content of a file to a scalar variable
 ##
 
 ##
-my $fh = open "LICENSE.txt";
+my $fh = open "$*TMPDIR/file";
 say $fh.WHAT;
-##
 #* Create a file handle from a string
 #* A file handle is an object that is a reference to a directory or a file on your computer's system.
 # In the code above, we assign a file handle to a scalar, named '$fh', using the open command.
@@ -27,8 +26,7 @@ say $fh.WHAT;
 
 
 ##
-my $fh = open "testfile", :r;
-##
+my $fh = open "$*TMPDIR/file", :r;
 #* File handle options
 #* The 'open' routine also accepts a variety of option flag arguments.
 # Here, we pass it the :r option, which tells the 'open' routine to
@@ -36,16 +34,10 @@ my $fh = open "testfile", :r;
 ##
 
 ##
-my $fh = open "testfile", :r;
-my $content = $fh.slurp
-##
-#* "Slurping" a file
+my $fh = open "$*TMPDIR/file", :r;
+$fh.slurp.say;
+#* Slurping a file
 #* Here we run the slurp method on a
 ##
 
-##
-##
-#*
-#*
-##
 
