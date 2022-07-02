@@ -1,7 +1,7 @@
 {
   "name": "Doc::Executable",
   "description": "Executable Raku examples",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "perl": "6.d",
   "authors": [
     "Steve Dondley"
@@ -29,9 +29,11 @@
     "Sequences/00 - Basics",
     "Sequences/07 - Arithmetic and Geometric Sequences",
     "Sequences/14 - Indexing Sequences",
-    "Sequences/21 - Infinite Sequences"
+    "Sequences/21 - Infinite Sequences",
+    "IO/05 - ArgFiles",
+    "IO/00 - Files"
   ],
   "license": "Artistic-2.0",
   "tags": [],
-  "source-url": ""
+  "source-url": "https://github.com/sdondley/Doc-Executable.git"
 }

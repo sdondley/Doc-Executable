@@ -7,8 +7,11 @@ my $rsm = ResourceMenu.new(
         resources => %?RESOURCES
         );
 
-sub execute is export {
-    my @parsed = parse-file $rsm.execute.file-path;
+sub execute($file?) is export {
+    my $fh = open "$*TMPDIR/file", :w;
+    $fh.say: "This is the contents of the file";
+    $fh.close;
+    my @parsed = parse-file ($file ?? $file !! $rsm.execute.file-path);
     eval-file(@parsed);
 }
 
