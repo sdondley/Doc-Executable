@@ -2,8 +2,10 @@
 use lib 'lib';
 use Doc::Executable;
 
-sub MAIN() {
-    execute;
+sub MAIN($file?) {
+    when !$file { execute; }
+    when !$file.IO.e { note "File '$file' does not exist" }
+    execute $file;
 }
 
 =begin pod

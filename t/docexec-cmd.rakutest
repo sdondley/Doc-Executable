@@ -1,0 +1,25 @@
+use v6.d;
+use Test;
+use Test::Output;
+
+plan 1;
+
+when !%*ENV<AUTHOR_TESTING> { skip 'skipping author tests'; done-testing; }
+my $out;
+
+my $proc = Proc::Async.new('unbuffer', 'bin/docexec');
+react {
+    whenever $proc.stdout -> $lout { $out ~= $lout; }
+    whenever Promise.in(1) { $proc.kill; }
+    whenever $proc.start { done; }
+}
+
+like $out, rx:s/Make selection/;
+
+lives-ok { my $proc = run 'bin/docexec',
+           't/data_files/code.txt', :out;
+           $out = $proc.out.slurp: :close;   }, 'runs docexec with file';
+
+like $out, rx:s/Lists with one element/;
+
+done-testing;

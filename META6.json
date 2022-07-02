@@ -28,7 +28,9 @@
     "Sequences/00 - Basics",
     "Sequences/07 - Arithmetic and Geometric Sequences",
     "Sequences/14 - Indexing Sequences",
-    "Sequences/21 - Infinite Sequences"
+    "Sequences/21 - Infinite Sequences",
+    "IO/05 - ArgFiles",
+    "IO/00 - Files"
   ],
   "source-url": "https://github.com/sdondley/Doc-Executable.git",
   "tags": [
