@@ -26,7 +26,8 @@ this distribution which are parsed and executed as Raku code.
 
 From the command line:
 =begin code :lang<raku>
-docexec
+docexec         # opens menu for finding executable doc and executes selection
+docexec $file   # opens executable doc file and executes selection
 =end code
 
 =head1 GOALS
@@ -106,7 +107,6 @@ include:
 
 =item Adding more executable docs
 =item Documentation for creating new executable doc text files
-=item Allow users to open a file outside of the distro.
 =item Allow users to add their own library of executable documents.
 =item Permit execution of on example at a time instead of the whole file.
 =item Templates for output (e.g. for HTML or markdown)
