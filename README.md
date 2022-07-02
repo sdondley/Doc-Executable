@@ -11,7 +11,8 @@ SYNOPSIS
 From the command line:
 
 ```raku
-docexec
+docexec         # opens menu for finding executable doc and executes selection
+docexec $file   # opens executable doc file and executes selection
 ```
 
 GOALS
@@ -78,8 +79,6 @@ As mentioned, the module in it's current state is rather limited and is more jus
   * Adding more executable docs
 
   * Documentation for creating new executable doc text files
-
-  * Allow users to open a file outside of the distro.
 
   * Allow users to add their own library of executable documents.
 

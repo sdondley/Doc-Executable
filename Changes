@@ -1,6 +1,8 @@
 Revision history for Doc-Executable
 
 {{$NEXT}}
+
+0.0.3  2022-07-02T17:27:20-04:00
     - new feature: allow users to execute and individual file
 
 0.0.2  2022-07-01T16:03:27-04:00
