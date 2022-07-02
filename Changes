@@ -1,6 +1,7 @@
 Revision history for Doc-Executable
 
 {{$NEXT}}
+    - new feature: allow users to execute and individual file
 
 0.0.2  2022-07-01T16:03:27-04:00
     - fix tests breaking workflow tests
