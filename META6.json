@@ -9,7 +9,6 @@
   "auth": "zef:sdondley",
   "depends": [
     "Test::Output",
-    "Injector",
     "Distribution::Resources::Menu"
   ],
   "build-depends": [],
