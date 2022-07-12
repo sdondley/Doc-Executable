@@ -1,0 +1,4 @@
+begin:
+Evaluates to: ERROR!
+Cannot call 'shift' on an immutable 'List'
+end:

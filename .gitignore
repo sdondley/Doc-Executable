@@ -2,3 +2,5 @@
 /Doc-Executable-*
 *.iml
 .idea
+.tom/
+.cache
